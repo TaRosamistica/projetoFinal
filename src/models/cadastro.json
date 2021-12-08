@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "Nome": "Max Vinícius",
+        "Categoria": "Nutricionista",
+        "Registro": "012345897",
+        "Especialidade": "Nutrição",
+        "Convenio": "Não",
+        "Estado": "Paraíba",
+        "Cidade": "Campina Grande",
+        "Telefone": "(83) 3333-7079 ",
+        "AtendimentoSc": true
+    },
+
+    {
+        "id": 2,
+        "Nome": "Rodrigo Vieira",
+        "Categoria": "Medico",
+        "Registro": "012345897",
+        "Especialidade": "Cardiologista",
+         "Estado": "Paraíba",
+        "Cidade": "Campina Grande",
+        "Telefone": "(83) 9148-6103 ",
+        "AtendimentoSc": false
+    },
+
+    {   
+        "id": 3,
+        "Nome": "Nati Mota Saude GG",
+        "Categoria": "Educador fisico",
+        "Registro": "012345897",
+        "Especialidade": "Educacao fisica",
+        "Convenio": "Não",
+        "Estado": "São Paulo",
+        "Cidade": "São Paulo",
+        "Telefone": "(11) 1111-3322 ",
+        "AtendimentoSc": true 
+    }
+]
