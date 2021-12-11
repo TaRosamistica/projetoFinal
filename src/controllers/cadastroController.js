@@ -30,6 +30,44 @@ const criarCadastro = (req, res)=>{
     res.status(201).send(novoCadastro)
 }
 
+const atualizaNome = (req, res)=> {
+    const idRequest = req.params.id
+    let novoNome = req.body.Nome
+    
+    nomeFiltrado = cadastroJson.find(nome => nome.id == idRequest)
+
+    nomeFiltrado.Nome = novoNome
+
+    res.status(200).json(
+        [
+            {
+                "mensagem": "Nome atualizado com sucesso",
+                nomeFiltrado
+            }
+        ]
+    )
+}
+
+const atualizaCadastro = (req, res) =>{
+    const idRequest = req.params.id
+    let cadastroRequest = req.body
+
+    const indxEncontrado = cadastroJson.findIndex(cadastro => cadastro.id == idRequest)
+    cadastroJson.splice(indxEncontrado, 1, cadastroRequest)
+
+    res.status(200).json(
+        [
+            {
+                "mensagem": "Cadastro atualizado com sucesso", 
+                cadastroJson
+            }
+        ]
+    )
+
+}
+
+//const deletaCadastro
+
 
        
 //dps trocar json por schema*
@@ -37,5 +75,7 @@ const criarCadastro = (req, res)=>{
 module.exports = {
     getAll,
     getById,
-    criarCadastro
+    criarCadastro,
+    atualizaNome,
+    atualizaCadastro
 }
