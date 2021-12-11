@@ -1,5 +1,5 @@
 const app = require("./src/app") //chamando app que está dentro de src
-const PORT = 8081
+const PORT = process.env.PORT || 8081
 
 //configurando a porta
 app.listen(PORT, ()=>{
